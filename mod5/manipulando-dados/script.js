@@ -56,11 +56,58 @@ console.log(w.toLowerCase())
 // Separe um texto que contem espaços, em um novo array onde cada texto
 // é uma posição do array. Depois disso, transforme o array em um texto e onde eram os espaços coloque _
 
-let phrase = "Eu quero viver um amor!"
-let myArray = phrase.split(" ")
-let phraseWithUnderscore = myArray.join("_")
-console.log(phraseWithUnderscore)
+ let phrase = "Eu quero viver um amor!"
+ let myArray = phrase.split(" ")
+ let phraseWithUnderscore = myArray.join("_")
+ console.log(phraseWithUnderscore)
 
 // split -> transforma um array com espaços
 // join -> implementa um caractere
 
+
+// Encontrando palavras em strings
+// Verificar se a frase tem a palavra amor
+
+let p = "Quero viver um amor!"
+console.log(phrase.includes("amor"))
+
+// vai responder como true
+
+// Criar um array com construtor
+
+let arr = new Array(1, 2, 3, 4)
+console.log(arr)
+
+// Contar elementos de um array
+
+console.log(['a', 'b', 'c'].length)
+
+// Transformar uma cadeia de caracteres em elementos de um array
+
+let cadeia = "manipulação"
+console.log(Array.from(cadeia))
+
+// from -> transforma em um array
+
+
+
+
+// Manipulando arrays
+
+let techs = ["html", "css", "js"]
+
+// adicionar um elemento no array
+console.log(techs.push("nodejs"))
+// adicionar no começo
+console.log(techs.unshift("sql"))
+// remover um intem no fim
+console.log(techs.pop())
+// remover do começo
+console.log(techs.shift())
+// pegar somente alguns elementos do array
+console.log(techs.slice(1, 3))
+// remover 1 ou mais items em qualquer posição do array
+console.log(techs.splice(1, 1))
+// encontrar a posição de um elemento no array
+let index = techs.indexOf('css')
+console.log(index)
